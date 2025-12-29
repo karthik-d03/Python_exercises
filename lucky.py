@@ -5,7 +5,8 @@ if gues < lucky - 2 :
     print("too low")
 elif gues > lucky + 2 :
     print("too high")
-elif gues == 12 :
+elif gues == lucky :
     print("correct")
 else :
     print("Almost There")
+
