@@ -1,11 +1,21 @@
-Total = 10000
-Effort = 3
+def divide (num, den):
+    quot = num // den
+    rem = num % den
+    return quot, rem
+    
+total = 10000
+effort = 3
 
-Days = Total // Effort
-Rem_hours = Total % Effort
-Months = Days // 30
-Days = Days % 30
-Years = Months // 12
-Months = Months % 12
+#days = total // effort
+#hours = total % effort
+days, hours = divide(total, effort)
 
-print(Years, "yrs", Months, "mnths", Days, "days", Rem_hours, "hrs")
+#months = days // 30
+#days = days % 30
+months, days = divide(days, 30)
+
+#years = months // 12
+#months = months % 12
+years, months = divide(months, 12)
+
+print(years, "yrs", months, "mnths", days, "days", hours, "hrs")
