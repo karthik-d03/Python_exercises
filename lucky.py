@@ -1,13 +1,11 @@
 lucky = 12
-gues = 9
+gues = 10
 
 if gues < lucky - 2 :
     print("too low")
-    
-if gues > lucky + 2 :
+elif gues > lucky + 2 :
     print("too high")
-    
-if gues == 12 :
+elif gues == 12 :
     print("correct")
 elif (gues >= lucky - 2) and (gues <= lucky + 2) :
     print("Almost There")
