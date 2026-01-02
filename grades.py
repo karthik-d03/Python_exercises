@@ -11,5 +11,5 @@ elif (percent > 80) :
     print("grade B")
 elif percent < 35 :
     print("Fail")
-elif (percent >= 35) :
+else :
     print("Avg")
